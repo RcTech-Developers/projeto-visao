@@ -23,10 +23,12 @@ export function Hero() {
         <img
           src={heroImg}
           alt="Paciente realizando exame de vista"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_25%] scale-100 md:scale-95"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/85 via-brand-dark/55 to-brand-dark/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/40 via-transparent to-brand-dark/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/85 via-brand-dark/50 to-brand-dark/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/30 via-transparent to-brand-dark/20" />
+        {/* Soft fade into next section */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background md:h-56" />
       </div>
 
       <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col items-center justify-center px-6 py-20 text-center">

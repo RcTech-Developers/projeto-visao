@@ -81,15 +81,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Exames oftalmológicos completos e gratuitos, com atendimento humanizado.",
+          "Instituto Visão Vertz leva exames oftalmológicos completos e gratuitos para quem mais precisa. Atendimento humanizado dos 2 aos 100 anos.",
       },
-      { property: "og:title", content: "Instituto Visão Vertz" },
+      { property: "og:title", content: "Instituto Visão Vertz | Exame de vista gratuito" },
       {
         property: "og:description",
-        content: "Exame de vista gratuito, humanizado e acessível.",
+        content: "Instituto Visão Vertz leva exames oftalmológicos completos e gratuitos para quem mais precisa. Atendimento humanizado dos 2 aos 100 anos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Instituto Visão Vertz | Exame de vista gratuito" },
+      { name: "twitter:description", content: "Instituto Visão Vertz leva exames oftalmológicos completos e gratuitos para quem mais precisa. Atendimento humanizado dos 2 aos 100 anos." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b3858609-765a-4ec2-bda8-6a4cfaf6b529/id-preview-3a9d5093--c5f7d4e1-6cd0-4ca3-846d-833928f38b83.lovable.app-1783966388280.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b3858609-765a-4ec2-bda8-6a4cfaf6b529/id-preview-3a9d5093--c5f7d4e1-6cd0-4ca3-846d-833928f38b83.lovable.app-1783966388280.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

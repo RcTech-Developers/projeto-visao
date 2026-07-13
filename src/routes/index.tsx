@@ -19,10 +19,10 @@ export const Route = createFileRoute("/")({
         content:
           "Instituto Visão Vertz leva exames oftalmológicos completos e gratuitos para quem mais precisa. Atendimento humanizado dos 2 aos 100 anos.",
       },
-      { property: "og:title", content: "Instituto Visão Vertz" },
+      { property: "og:title", content: "Instituto Visão Vertz | Exame de vista gratuito" },
       {
         property: "og:description",
-        content: "Exame de vista gratuito, humanizado e acessível.",
+        content: "Instituto Visão Vertz leva exames oftalmológicos completos e gratuitos para quem mais precisa. Atendimento humanizado dos 2 aos 100 anos.",
       },
     ],
   }),

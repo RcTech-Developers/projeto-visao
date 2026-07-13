@@ -56,10 +56,10 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.55 }}
-          className="mt-6 max-w-2xl text-lg text-white/85 md:text-xl"
+          transition={{ duration: 0.9, delay: 0.6 }}
+          className="mt-8 max-w-3xl font-serif text-2xl italic leading-[1.35] text-white/95 md:text-4xl lg:text-[2.75rem]"
         >
-          não um privilégio. Levamos exame de vista gratuito para quem mais precisa.
+          não um privilégio. Levamos exame de vista gratuito<br className="hidden md:block" /> para quem mais precisa.
         </motion.p>
 
         <motion.div

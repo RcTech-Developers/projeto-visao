@@ -34,9 +34,9 @@ function Index() {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <Services />
       <About />
       <Stats />
-      <Services />
       <Faq />
       <Partners />
       <Contact />

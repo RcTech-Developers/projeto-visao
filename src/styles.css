@@ -34,6 +34,7 @@
   --color-brand-accent: var(--brand-accent);
   --color-brand-gold: var(--brand-gold);
   --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 }
 

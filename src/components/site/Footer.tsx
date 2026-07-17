@@ -5,10 +5,10 @@ export function Footer() {
         <div className="flex items-center gap-2">
           <span className="font-display text-lg font-light text-brand-dark">Instituto</span>
           <span className="rounded bg-brand-light/40 px-1.5 py-0.5 text-xs font-bold text-brand-dark">
-            Visão Vertz
+            Visão Voluntária
           </span>
         </div>
-        <div>© 2026 Instituto Visão Vertz · visaovertz.com.br</div>
+        <div>© 2026 Instituto Visão Voluntária · visaovoluntaria.com.br</div>
       </div>
     </footer>
   );

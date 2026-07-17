@@ -57,6 +57,9 @@ export function Contact() {
               <Field label="Nome" placeholder="Seu nome completo" />
               <Field label="Telefone" placeholder="(00) 00000-0000" />
               <Field label="E-mail" placeholder="voce@email.com" type="email" />
+              <Field label="Estado" placeholder="Ex: Rio de Janeiro" type="text" />
+              <Field label="Cidade" placeholder="Ex: Niteroi" type="text" />
+
               <div>
                 <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-brand-dark/70">
                   Mensagem

@@ -23,7 +23,7 @@ export function Hero() {
         <img
           src={heroImg}
           alt="Paciente realizando exame de vista"
-          className="h-full w-full object-cover object-[center_25%] scale-100 md:scale-95"
+          className="absolute inset-0 h-full w-full object-cover object-[center_20%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/85 via-brand-dark/50 to-brand-dark/20" />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/30 via-transparent to-brand-dark/20" />
@@ -57,9 +57,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="mt-8 max-w-3xl font-serif text-2xl italic leading-[1.35] text-white/95 md:text-4xl lg:text-[2.75rem]"
+        className="mt-8 max-w-3xl font-display font-semibold leading-[1.2] text-white text-xl md:text-3xl lg:text-[2.2rem]"
         >
-          não um privilégio. Levamos exame de vista gratuito<br className="hidden md:block" /> para quem mais precisa.
+          não um privilégio. <br></br>Levamos exame de vista gratuito<br className="hidden md:block" /> para quem mais precisa.
         </motion.p>
 
         <motion.div
@@ -72,13 +72,13 @@ export function Hero() {
             href="#contato"
             className="rounded-full bg-brand px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-brand-dark/40 transition hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl"
           >
-            Agendar meu exame
+            Exames realizados
           </a>
           <a
             href="#sobre"
             className="rounded-full border border-white/40 bg-white/5 px-8 py-4 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/10"
           >
-            Conhecer o instituto
+            Sobre nós
           </a>
         </motion.div>
 
@@ -90,9 +90,9 @@ export function Hero() {
         >
           <div className="grid grid-cols-1 gap-6 text-left md:grid-cols-3">
             {[
-              { v: <><Counter to={60} />{" "}mil+</>, l: "atendimentos realizados" },
-              { v: <><Counter to={5} /> anos+</>, l: "experiência mínima da equipe" },
-              { v: "2 a 100", l: "idades atendidas (anos)" },
+              { v: <><Counter to={60} />{" "}mil+</>, l: "Atendimentos realizados" },
+              { v: <><Counter to={5} /> anos+</>, l: "Atuando de maneira itinerante" },
+              { v: <><Counter to={1000} />+</>, l: "Óculos doados" },
             ].map((s, i) => (
               <div key={i}>
                 <div className="text-3xl font-bold text-white md:text-4xl">{s.v}</div>

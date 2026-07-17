@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import logo from "@/assets/virtez2.png";
 
 const cards = [
   { title: "Missão", body: "Promover o acesso gratuito à oftalmologia de qualidade, de maneira responsável e humanizada." },
@@ -27,10 +28,7 @@ export function About() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/80">
-                Após três décadas promovendo saúde no subúrbio do Rio de Janeiro através do
-                CEMOI (Centro Médico Odontológico de Inhaúma), expandimos nossa atuação para a
-                oftalmologia. Nasceu o Instituto Visão Vertz: exames gratuitos, diagnóstico
-                responsável e encaminhamento acessível para quem precisa enxergar melhor.
+                Após 30 anos promovendo saúde no subúrbio do Rio de Janeiro, o Centro Médico Odontológico de Inhaúma se expandiu a fim de atender a população mais carente na área da oftalmologia. Com o apoio e experiência de profissionais habilitados em atendimentos oftalmológicos itinerantes pelo Brasil, o CEMOI criou um braço social: o Instituto Visão Vertz.
               </p>
             </Reveal>
 
@@ -51,18 +49,15 @@ export function About() {
             </div>
           </div>
 
-          <Reveal delay={0.3} className="hidden lg:block">
-            <div className="flex h-full items-center justify-center rounded-3xl bg-brand-light/40 p-10">
-              <div className="text-center">
-                <div className="font-display text-6xl font-light tracking-tight text-white">
-                  Instituto
-                </div>
-                <div className="mt-2 inline-block bg-white px-4 py-1 text-2xl font-bold text-brand-dark">
-                  Visão Vertz
-                </div>
-              </div>
-            </div>
-          </Reveal>
+         <Reveal delay={0.3} className="hidden lg:flex">
+  <div className="sticky top-28 flex h-[930px] w-full items-center justify-center overflow-hidden rounded-3xl bg-white shadow-2xl">
+    <img
+      src={logo}
+      alt="Instituto Visão Vertz"
+       className="h-full w-full scale-105 object-contain transition-transform duration-700 hover:scale-130"
+    />
+  </div>
+</Reveal>
         </div>
       </div>
     </section>

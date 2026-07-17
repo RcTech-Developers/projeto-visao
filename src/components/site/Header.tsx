@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre Nós", href: "#sobre" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Parceiros", href: "#parceiros" },
+  { label: "Dúvidas", href: "#duvidas" },
+  { label: "Exames", href: "#exames" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -25,18 +26,16 @@ export function Header() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-background/90 backdrop-blur-md shadow-sm" : "bg-background/70 backdrop-blur"
-      }`}
-    >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+      }`}>
+      <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-6">
         <a href="#inicio" className="flex items-center gap-2">
-          <div className="relative">
-            <span className="font-display text-2xl font-light tracking-tight text-brand-dark">
-              Instituto
-            </span>
-            <span className="ml-1 rounded-md bg-brand-light/40 px-1.5 py-0.5 text-xs font-bold text-brand-dark">
-              Visão Vertz
-            </span>
-          </div>
+         <div className="relative flex items-center">
+          <img
+            src={logo}
+            alt="Instituto Visão Vertz"
+            className="h-14 w-auto object-contain"
+          />
+        </div>
         </a>
         <nav className="hidden items-center gap-9 md:flex">
           {links.map((l) => (

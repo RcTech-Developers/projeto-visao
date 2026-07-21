@@ -2,18 +2,32 @@ import { motion, useInView, useMotionValue, useTransform, animate } from "framer
 import { useEffect, useRef } from "react";
 import heroImg from "@/assets/hero-exam.jpg";
 
-function Counter({ to, suffix = "", prefix = "" }: { to: number; suffix?: string; prefix?: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+function Counter({
+  to,
+  suffix = "",
+  prefix = "",
+}: {
+  to: number;
+  suffix?: string;
+  prefix?: string;
+}) {
   const mv = useMotionValue(0);
-  const rounded = useTransform(mv, (v) => `${prefix}${Math.round(v).toLocaleString("pt-BR")}${suffix}`);
+
+  const rounded = useTransform(
+    mv,
+    (v) => `${prefix}${Math.round(v).toLocaleString("pt-BR")}${suffix}`
+  );
+
   useEffect(() => {
-    if (inView) {
-      const controls = animate(mv, to, { duration: 1.6, ease: "easeOut" });
-      return controls.stop;
-    }
-  }, [inView, to, mv]);
-  return <motion.span ref={ref}>{rounded}</motion.span>;
+    const controls = animate(mv, to, {
+      duration: 1.6,
+      ease: "easeOut",
+    });
+
+    return () => controls.stop();
+  }, [mv, to]);
+
+  return <motion.span>{rounded}</motion.span>;
 }
 
 export function Hero() {
@@ -69,7 +83,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href="#contato"
+            href="#exames"
             className="rounded-full bg-brand px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-brand-dark/40 transition hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl"
           >
             Exames realizados

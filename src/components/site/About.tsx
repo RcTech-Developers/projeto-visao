@@ -54,7 +54,7 @@ export function About() {
     <img
       src={logo}
       alt="Instituto Visão Vertz"
-       className="h-full w-full scale-105 object-contain transition-transform duration-700 hover:scale-130"
+       className="h-full w-full scale-110 object-contain transition-transform duration-700 hover:scale-130"
     />
   </div>
 </Reveal>
